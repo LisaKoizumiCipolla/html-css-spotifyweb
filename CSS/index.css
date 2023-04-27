@@ -326,11 +326,11 @@ h4{
 
 .player{
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .buttons{
     justify-content: center;
+    padding-bottom: 15px;
 }
 
 .buttons button{
@@ -384,6 +384,17 @@ h4{
     background-color: greenyellow;
 }
 
+.fa-circle{
+    position: absolute;
+    color: #c1c1c1;
+    left: 75px;
+    opacity: 0;
+}
+
+.proceeding:hover .fa-circle{
+    opacity: 1;
+}
+
 .details{
     align-items: center;
 }
@@ -400,7 +411,7 @@ h4{
 }
 
 .volume-bar{
-    width: 100px;
+    width: 110px;
     height: 4px;
     border-radius: 1.5rem;
     background-color: #5a5a5a;
@@ -408,7 +419,7 @@ h4{
 }
 
 .volume-level{
-    width: 20px;
+    width: 23px;
     height: 4px;
     border-radius: 1.5rem;
     background-color: #c1c1c1;
@@ -419,11 +430,23 @@ h4{
     background-color: greenyellow;
 }
 
+.volume-level:hover .fa-circle{
+    opacity: 1;
+}
+
 @media screen and (max-width: 992px) {
 
     .cd{
     width: calc( (100% / 4) - 10px);
-}
+    }
+
+    .base-bar{
+        width: 300px;
+    }
+
+    .proceeding{
+        width: 60px;
+    }
 
 }
 
@@ -431,14 +454,40 @@ h4{
    
     .cd{
     width: calc( (100% / 2) - 10px);
-}
+    }
+
+    .small-img{
+        height: 40px;
+    }
+
+    .heart-folder{
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .base-bar{
+        width: 200px;
+    }
+
+    .proceeding{
+        width: 40px;
+    }
+
+    .volume-bar{
+        width: 100px;
+    }
+    
+    .volume-level{
+        width: 20px;
+    }
 
 }
 
 @media screen and (max-width: 576px) {
 
     nav{
-        width: 50px;
+        width: 60px;
         padding: 5px;
         align-items: center;
     }
@@ -451,6 +500,10 @@ h4{
         display: block;
     }
 
+    .vertical-green{
+        display: none;
+    }
+
     .home-list span{
         display: none;
     }
@@ -459,7 +512,47 @@ h4{
         display: none;
     }
 
+    .user{
+        display: none;
+    }
+
+    .fa-circle-down{
+        display: block !important;
+    }
+
+    .profile-img{
+        display: block !important;
+    }
+
     .big-section{
         width: calc(100% - 50px);
+    }
+
+    .small-img{
+        height: 35px;
+    }
+
+    .base-bar{
+        width: 120px;
+    }
+
+    .proceeding{
+        width: 35px;
+    }
+    
+    .details i{
+        padding-left: 10px;
+    }
+    
+    .bar{
+        padding-left: 10px;
+    }
+
+    .volume-bar{
+        width: 90px;
+    }
+    
+    .volume-level{
+        width: 15px;
     }
 }
