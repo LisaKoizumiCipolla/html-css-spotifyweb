@@ -15,11 +15,34 @@ main,footer{
 
 
 nav{
-    width: 240px;
+    width: 280px;
     height: calc(100vh - 90px);
     background-color: #000000;
-    padding: 20px 20px;
+    padding: 20px;
     color: #a3a3a3;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.nav-img{
+    width: 25px;
+    filter: invert(50%);
+}
+
+nav h2:hover{
+    color: white;
+}
+
+nav h3:hover{
+    color: white;
+}
+
+.logo{
+    width: 70%;
+}
+
+.logo-small{
+    display: none;
 }
 
 .home-list{
@@ -31,16 +54,46 @@ nav{
     align-items: center;
 }
 
-li img{
-    width: 30px;
+.home-list li:hover .nav-img{
+    filter: invert(0%);
 }
 
-.logo{
-    width: 70%;
+.home-list li:hover span{
+    color: white;
+}
+
+.playlist-name li:hover{
+    color: white;
+}
+
+.user{
+    flex-direction: column;
+}
+
+.install p:hover{
+    color: white;
+}
+
+.install p:hover .install img{
+    color: white;
+}
+
+.line{
+    border: 1px solid #808080;
+    align-items: center;
+    width: 240px;
+}
+
+.profile-img{
+    background-color: #808080;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .big-section{
-    width: calc(100% - 240px);
+    width: calc(100% - 280px);
     height: calc(100vh - 90px);
     overflow-y: auto;
 }
@@ -166,7 +219,6 @@ p{
     opacity: 0;
 }
 
-
 .round img{
     border-radius: 50%;
 }
@@ -196,4 +248,31 @@ p{
 
 }
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+
+    nav{
+        width: 50px;
+        padding: 5px;
+        align-items: center;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo-small{
+        display: block;
+    }
+
+    .home-list span{
+        display: none;
+    }
+
+    .playlist{
+        display: none;
+    }
+
+    .big-section{
+        width: calc(100% - 50px);
+    }
+}
