@@ -39,10 +39,12 @@ nav h3:hover{
 
 .logo{
     width: 70%;
+    padding-bottom: 20px;
 }
 
 .logo-small{
     display: none;
+    padding-bottom: 15px;
 }
 
 .home-list{
@@ -52,6 +54,13 @@ nav h3:hover{
 .home-list li{
     display: flex;
     align-items: center;
+    padding-bottom: 10px;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.home-list span{
+    margin-left: 5px;
 }
 
 .home-list li:hover .nav-img{
@@ -62,6 +71,22 @@ nav h3:hover{
     color: white;
 }
 
+.vertical-green .green-line{
+    width: 2px;
+    height: 30px;
+    align-items: flex-start;
+}
+
+.playlist h3{
+    padding: 10px 0 20px;
+}
+
+.playlist-name li{
+    padding-bottom: 20px;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
 .playlist-name li:hover{
     color: white;
 }
@@ -70,11 +95,16 @@ nav h3:hover{
     flex-direction: column;
 }
 
+.fa-circle-down{
+    line-height: 1em;
+    padding-right: 10px;
+}
+
 .install p:hover{
     color: white;
 }
 
-.install p:hover .install img{
+.install:hover .fa-circle-down{
     color: white;
 }
 
@@ -82,6 +112,11 @@ nav h3:hover{
     border: 1px solid #808080;
     align-items: center;
     width: 240px;
+    margin: 10px 0;
+}
+
+.user-profile{
+    align-items: center;
 }
 
 .profile-img{
@@ -90,7 +125,9 @@ nav h3:hover{
     height: 35px;
     object-fit: cover;
     border-radius: 50%;
+    margin-right: 10px; 
 }
+
 
 .big-section{
     width: calc(100% - 280px);
@@ -142,7 +179,7 @@ button:hover{
 }
 
 .main-section{
-    padding: 15px 10px;
+    padding: 20px;
     background-color: #141922;
     color: white;
 }
@@ -154,9 +191,9 @@ ul{
 }
 
 .main-ul{
-    font-size: .7rem;
+    font-size: .8rem;
     color: #7e8184;
-    font-weight: 600;
+    font-weight: 700;
     flex-wrap: wrap;
 }
 
@@ -164,22 +201,42 @@ ul{
     padding: 0 10px;
 }
 
+.green-line-li{
+    flex-direction: column;
+    align-items: center;
+}
+
+.green-line-li .green-line{
+    width: 30px;
+    margin-top: 2px;
+}
+
+.green-line{
+    border: 1px solid greenyellow;
+    align-items: center;
+}
+
 .main-ul li:hover{
     color: white;
 }
 
 h1{
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: 700;
+    padding: 30px 0 10px;
   }
+
+.subtitle{
+    padding-bottom: 10px;
+}
 
 .cd-container{
     flex-wrap: wrap;
-    padding: 35px 0 25px;
+    padding-top: 20px;
 }
 
 .cd{
-    width: calc( (100% / 6) - 10px);
+    width: calc( (100% / 6) - 5px);
     text-align: center;
     justify-content: center;
     padding-right: 20px;
@@ -197,10 +254,12 @@ h2{
 }
 
 p{
-    font-size: .65rem;
+    font-size: .8rem;
     color: #7e8184;
     font-weight: 600;
 }
+
+
 
 .cd img{
     width: 100%;

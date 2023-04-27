@@ -23,7 +23,7 @@
 
                 <div>
                     <ul class="home-list ">
-                        <li><img class="nav-img" src="./img/home.svg" alt=""> <span>Home</span> </li>
+                        <li class="vertical-green flex"><div class="green-line"></div><img class="nav-img" src="./img/home.svg" alt=""> <span>Home</span> </li>
                         <li><img class="nav-img" src="./img/search.svg" alt=""> <span>Cerca</span></li>
                         <li><img class="nav-img" src="./img/libreria.svg" alt=""> <span> La tua libreria</span></li>
                     </ul>
@@ -67,7 +67,9 @@
             <section class="main-section">
                 <div>
                     <ul class="main-ul flex">
-                        <li>IN EVIDENZA</li>
+                        <li class="green-line-li flex">IN EVIDENZA
+                            <div class="green-line"></div>
+                        </li>
                         <li>PODCAST</li>
                         <li>CLASSIFICHE</li>
                         <li>GENERI E MOOD</li>
@@ -113,7 +115,7 @@
                 </div>
 
                 <h1>Creato per John Doe</h1>
-                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                <p class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</p>
 
                 <div class="cd-container flex">
                     <div class="cd">
@@ -127,7 +129,7 @@
                 </div>
 
                 <h1>Artisti più popolari</h1>
-                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                <p class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</p>
                 <div class="cd-container round flex">
                     <div class="cd">
                         <img src="./img/youg.jpeg" alt="">
@@ -141,7 +143,9 @@
             </section>
         </section>
       </main>
+
       <footer class="container flex between">
+
         <div class="brano flex">
             <div class="flex">
                 <img class="small-img" src="./img/sinister.jpeg" alt="">
@@ -155,7 +159,14 @@
                 <i class="fa-regular fa-folder"></i>
             </div>
         </div>
-        <div></div>
+
+        <div class="player flex">
+            <div class="buttons"></div>
+            <div class="player-bar"></div>
+        </div>
+
+        <div class="volume flex"></div>
+
       </footer>
     </body>
 </html>
