@@ -251,6 +251,7 @@ h1{
 
 .cd-img img{
     width: 100%;
+    display: block;
 }
 
 .cd-play{
@@ -507,7 +508,7 @@ h4{
     .heart-folder{
         flex-direction: column;
         justify-content: space-between;
-        padding: 0 10px;
+        padding: 0 20px;
     }
 /*
     .base-bar{
@@ -610,3 +611,4 @@ h4{
         width: 15px;
     }
 }
+

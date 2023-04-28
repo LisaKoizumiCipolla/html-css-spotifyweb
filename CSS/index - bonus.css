@@ -256,6 +256,7 @@ h1{
 
 .cd-img img{
     width: 100%;
+    display: block;
 }
 
 .cd-play{
@@ -405,7 +406,7 @@ h4{
 }
 
 .base-bar{
-    width: 100%;
+    max-width: 100%;
     height: 4px;
     border-radius: 1.5rem;
     background-color: #5a5a5a;
@@ -413,7 +414,7 @@ h4{
 }
 
 .proceeding{
-    width: 8%;
+    max-width: 8%;
     height: 4px;
     border-radius: 1.5rem;
     background-color: #c1c1c1;
@@ -455,7 +456,7 @@ h4{
 }
 
 .volume-bar{
-    width: 110px;
+    max-width: 110px;
     height: 4px;
     border-radius: 1.5rem;
     background-color: #5a5a5a;
@@ -463,7 +464,7 @@ h4{
 }
 
 .volume-level{
-    width: 23px;
+    max-width: 23px;
     height: 4px;
     border-radius: 1.5rem;
     background-color: #c1c1c1;
@@ -496,6 +497,15 @@ h4{
         width: 60px;
     }
 */
+
+.brano {
+    width: 190px;
+  }
+
+.heart-folder{
+    padding-left: 15px;
+}
+
 }
 
 @media screen and (max-width: 768px) {
@@ -588,6 +598,14 @@ h4{
     .player{
         width: 40%;
     }
+    
+    .buttons button{
+        padding: 0 2%;
+    }
+    
+    .big-play{
+        padding: 0 3%;
+    }
 
 /*
     .base-bar{
@@ -612,5 +630,12 @@ h4{
     
     .volume-level{
         width: 15px;
+    }
+}
+
+@media screen and (max-width: 410px){
+    footer{
+        height: 150px;
+        flex-direction: column;
     }
 }
