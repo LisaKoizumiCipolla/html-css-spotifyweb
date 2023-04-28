@@ -82,10 +82,15 @@ nav h3:hover{
     color: white;
 }
 
+.vertical-green{
+    position: relative;
+}
+
 .vertical-green .green-line{
     width: 2px;
     height: 30px;
-    align-items: flex-start;
+    position: absolute;
+    padding-left: 0;
 }
 
 .playlist h3{
@@ -382,6 +387,7 @@ h4{
 
 .bar{
     width: 60%;
+    justify-content: center;
 }
 
 .base-bar{
@@ -400,22 +406,22 @@ h4{
     position: absolute;
 }
 
-.base-bar:hover + .proceeding{
-    background-color: greenyellow;
-}
-
 .fa-circle{
     position: absolute;
     color: #c1c1c1;
+    align-self: center;
+    right: 0;
 }
 
-.proceeding-circle{
-    position: absolute;
-    right: 0;
+.proceeding-circle,.volume-circle{
     opacity: 0;
 }
 
-.base-bar:hover + .proceeding-circle{
+.base-bar-wrapper:hover .proceeding{
+    background-color: greenyellow;
+}
+
+.base-bar-wrapper:hover .proceeding-circle{
     opacity: 1;
 }
 
@@ -456,11 +462,11 @@ h4{
     opacity: 0;
 }
 
-.volume-bar:hover + .volume-level{
+.volume-bar-wrapper:hover .volume-level{
     background-color: greenyellow;
 }
 
-.volume-bar:hover .volume-circle{
+.volume-bar-wrapper:hover .volume-circle{
     opacity: 1;
 }
 
