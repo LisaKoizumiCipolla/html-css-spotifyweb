@@ -488,13 +488,17 @@ h4{
     width: calc( (100% / 4) - 10px);
     }
 
-.brano {
-    width: 190px;
-  }
+    .proceeding{
+        max-width: 8%;
+    }
 
-.heart-folder{
-    padding-left: 15px;
-}
+    .brano {
+        width: 190px;
+    }
+
+    .heart-folder{
+        padding-left: 15px;
+    }
 
 }
 
@@ -660,5 +664,12 @@ h4{
     
     .details i{
         padding-right: 20px;
+    }
+}
+
+@media screen and (max-height: 700px){
+
+    nav{
+        overflow-y: auto;
     }
 }
