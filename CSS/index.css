@@ -28,6 +28,7 @@ main,footer{
 nav{
     width: 280px;
     height: calc(100vh - 90px);
+    overflow: hidden;
     background-color: #000000;
     padding: 20px;
     color: #a3a3a3;
@@ -300,6 +301,7 @@ footer{
     background-color: #282828;
     align-items: center;
     padding: 5px 10px;
+    opacity: 1;
 }
 
 .brano{
