@@ -87,10 +87,10 @@ nav h3:hover{
 }
 
 .vertical-green .green-line{
+    position: absolute;
     width: 2px;
     height: 30px;
-    position: absolute;
-    padding-left: 0;
+    left: -20px;
 }
 
 .playlist h3{
@@ -111,16 +111,16 @@ nav h3:hover{
     flex-direction: column;
 }
 
-.fa-circle-down{
-    line-height: 1em;
+.circle-down{
+    line-height: 1.2em;
     padding-right: 10px;
 }
 
-.install p:hover{
+.install:hover p{
     color: white;
 }
 
-.install:hover .fa-circle-down{
+.install:hover .circle-down{
     color: white;
 }
 
@@ -242,6 +242,7 @@ h1{
 .cd-img{
     width: 100%;
     position: relative;
+    background-color: #000000;
 }
 
 .cd-img img{
@@ -259,6 +260,10 @@ h1{
 
 .cd:hover .cd-play{
     opacity: 1;
+}
+
+.cd:hover .cd-img>img{
+    opacity: 0.5;
 }
 
 h2{
@@ -283,7 +288,7 @@ p{
 }
 */
 
-.round img{
+.border-radius{
     border-radius: 50%;
 }
 
@@ -410,7 +415,7 @@ h4{
     position: absolute;
     color: #c1c1c1;
     align-self: center;
-    right: 0;
+    right: -5px;
 }
 
 .proceeding-circle,.volume-circle{
@@ -457,8 +462,6 @@ h4{
 }
 
 .volume-circle{
-    position: absolute;
-    right: 0;
     opacity: 0;
 }
 
