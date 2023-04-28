@@ -455,7 +455,7 @@ h4{
 }
 
 .volume-bar{
-    max-width: 110px;
+    width: 110px;
     height: 4px;
     border-radius: 1.5rem;
     background-color: #5a5a5a;
@@ -463,7 +463,7 @@ h4{
 }
 
 .volume-level{
-    max-width: 23px;
+    width: 23px;
     height: 4px;
     border-radius: 1.5rem;
     background-color: #c1c1c1;
