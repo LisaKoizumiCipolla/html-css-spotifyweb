@@ -150,7 +150,6 @@ nav h3:hover{
     margin-right: 10px; 
 }
 
-
 .big-section{
     width: calc(100% - 280px);
     height: calc(100vh - 90px);
@@ -488,15 +487,6 @@ h4{
     .cd{
     width: calc( (100% / 4) - 10px);
     }
-/*
-    .base-bar{
-        width: 300px;
-    }
-
-    .proceeding{
-        width: 60px;
-    }
-*/
 
 .brano {
     width: 190px;
@@ -523,15 +513,7 @@ h4{
         justify-content: space-between;
         padding: 0 10px;
     }
-/*
-    .base-bar{
-        width: 200px;
-    }
 
-    .proceeding{
-        width: 40px;
-    }
-*/    
     .details i{
         padding-left: 10px;
     }
@@ -607,15 +589,6 @@ h4{
         padding: 0 3%;
     }
 
-/*
-    .base-bar{
-        width: 120px;
-    }
-
-    .proceeding{
-        width: 35px;
-    }
-*/    
     .details i{
         padding-left: 5px;
     }
@@ -634,8 +607,58 @@ h4{
 }
 
 @media screen and (max-width: 410px){
+
+    nav{
+        height: calc(100vh - 130px);
+    }
+    
+    .big-section{
+        height: calc(100vh - 130px);
+    }
+
+    .main-section{
+        height: calc(100vh - 90px - 130px);
+    }
+
+    .main-ul li{
+        padding-bottom: 10px;
+    }
+
     footer{
-        height: 150px;
+        height: 130px;
         flex-direction: column;
+    }
+
+    .buttons button{
+        padding: 0 10px;
+    }
+    
+    .big-play{
+        padding: 0 1rem;
+    }
+
+    .player{
+        width: 100%;
+    }
+
+    .player-bar {
+        height: 10px;
+        width: 100%;
+    }
+
+    .bar{
+        width: 80%;
+    }
+
+    .base-bar{
+        width: 100%;
+    }
+
+    .proceeding{
+        width: 8%;
+    }
+    
+    .details i{
+        padding-right: 20px;
     }
 }
