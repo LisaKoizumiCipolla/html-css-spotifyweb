@@ -665,6 +665,11 @@ h4{
     .details i{
         padding-right: 20px;
     }
+
+    .volume-circle{
+        right: 0px;
+        left: 1px;
+    }
 }
 
 @media screen and (max-height: 700px){
